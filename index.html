@@ -15,14 +15,14 @@
 </head>
 <body>
     <header>
-        <div class="container menu-nav">
+        <div class="container menu-nav ">
         <nav class="menu-view">
             <a href="./index.html" class="logo-connection">
                 <span class="main-logo1">Web</span>
                 <span class="main-logo2">Studio</span>
             </a>
             <ul class="tagging-list list-nav">
-                <li><a class="link" href="./index.html">Agencja</a></li>
+                <li class="menu-accessories"><a class="link menu-marking" href="./index.html">Agencja</a></li>
                 <li><a class="link" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="link" href="/contact">Kontakt</a></li>
             </ul>
@@ -50,7 +50,12 @@
             <div class="motto-view">
                 <h1> EFKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
             <div class="btn-view">
-                <button type="button" class="order-btn">Zamów usługę</button>
+                <button type="button" class="order-btn" data-modal-open>Zamów usługę</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="modal-btn" data-modal-close><svg class="modal-btn-marking" height="18" width="18"><use href="./images/colseblack.svg#icon-close-black-18dp-2-1"></use></svg></button>
+                    </div>
+                </div>
             </div>
             </div>
         </div>
@@ -105,14 +110,23 @@
                         <h2 class="subsection-title1">Czym się zajmujemy</h2>
                                        
                     <ul class="tagging-list photo-view">
-                        <li>
+                        <li class="card-box-view">
                             <img class="card-image" src="images/box1.jpg" alt="Pisanie Kodu" width="370" height="294"/>
+                            <div class="label">
+                                <h3 class="label-description">Aplikacje komputerowe</h3>
+                            </div>
                         </li>
-                        <li>
+                        <li class="card-box-view">
                             <img class="card-image" src="images/box2.jpg" alt="Tworzenie aplikacji na telefon" width="370" height="294" />
+                            <div class="label">
+                                <h3 class="label-description">Aplikacje mobilne</h3>
+                            </div>
                         </li>
-                        <li>
+                        <li class="card-box-view">
                             <img class="card-image" src="images/box3.jpg" alt="Projekty Graficzne" width="370" height="294" />
+                            <div class="label">
+                                <h3 class="label-description">Rozwiązania graficzne</h3>
+                            </div>
                         </li>
                         
                     </ul>
@@ -303,5 +317,7 @@
             
 
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
